@@ -1,0 +1,26 @@
+﻿<Window x:Class="projektDesktop4TP.Register"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:projektDesktop4TP"
+        mc:Ignorable="d"
+        Title="Register" Height="250" Width="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0">Nazwa:</Label>
+        <TextBox x:Name="UsernameTextBox" Grid.Row="1"/>
+        <Label Grid.Row="2">Hasło:</Label>
+        <PasswordBox x:Name="passwordb" Grid.Row="3"/>
+        <Button Grid.Row="4" Height="50" Click="RegisterButton_Click">Potwierdz</Button>
+    </Grid>
+</Window>
